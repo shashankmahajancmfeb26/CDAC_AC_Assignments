@@ -1,0 +1,30 @@
+31. Fix the error: 
+int x; 
+System.out.println(x);
+
+Ans:
+int x;
+x = 10 //can be any number
+System.out.println(x);
+
+32.  Fix: 
+if(x = 10){ 
+	System.out.println("Hello"); 
+}
+
+Ans: 
+if(x == 10){ 
+	System.out.println("Hello"); 
+}
+
+33.Fix infinite loop: 
+while(i < 10){ 
+	System.out.println(i); 
+}
+
+Ans:
+int i =0
+while(i < 10){ 
+	System.out.println(i);
+	i++;
+}
