@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: #9cd5e4;
+}
+
+.container {
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.left {
+    width: 35%;
+    color: white;
+    padding: 30px;
+    background: linear-gradient(135deg, #5e3fb5, #2141f3, #ff9a9e);
+}
+
+.left h2 {
+    margin-bottom: 20px;
+}
+
+.left p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.social {
+    margin-top: 20px;
+}
+
+.social span {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.right {
+    width: 65%;
+    background: white;
+    padding: 30px;
+}
+
+.right h2 {
+    margin-bottom: 20px;
+}
+
+
+.right input,
+.right textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+}
+
+.right input:focus,
+.right textarea:focus {
+    border-bottom: 2px solid #3f51b5;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #3f51b5;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2c3e90;
+}

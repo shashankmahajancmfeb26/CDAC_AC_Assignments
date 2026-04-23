@@ -1,0 +1,30 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#heading{
+    margin-top: 50px;
+    color: linear-gradient(#9ca1b8, #80DEEA);
+    font-size: 30;
+}
+#container {
+    background: linear-gradient(#5C6BC0, #80DEEA);
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.main-label {
+    display: inline-block;
+    width: 160px;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

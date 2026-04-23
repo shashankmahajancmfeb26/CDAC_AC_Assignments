@@ -1,0 +1,68 @@
+*{ box-sizing: border-box; }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0e0e0;
+    margin: 0; padding: 20px;
+}
+
+.resume {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.main-header {
+    background-color: #d87c17; /* The orange color */
+    color: white;
+    padding: 40px 50px;
+}
+
+.main-header h1 { margin: 0; font-size: 2.5em; letter-spacing: 1px; }
+.main-header .job-title { margin-top: 5px; font-size: 1.2em; opacity: 0.9; }
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.left-col { padding: 40px 30px 40px 50px; }
+
+.section-title {
+    font-size: 1.1em;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.orange { color: #d87c17; border-bottom: 1px solid #d87c17; }
+
+.entry { display: flex; margin-bottom: 20px; }
+.date { width: 120px; font-size: 0.85em; color: #666; flex-shrink: 0; }
+.details h3 { margin: 0; font-size: 1.05em; }
+
+.sidebar {
+    background-color: #fafafa;
+    padding: 40px 30px;
+    border-left: 1px solid #eee;
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.sidebar-title {
+    color: #d87c17;
+    font-size: 1.1em;
+    border-bottom: 1px solid #d87c17;
+    padding-bottom: 5px;
+    margin: 25px 0 10px 0;
+}
+
+.info-group label { display: block; font-weight: bold; font-size: 0.85em; margin-top: 10px; }
+.info-group p { margin: 2px 0; font-size: 0.85em; color: #444; }
+
+.skills-list { padding-left: 15px; font-size: 0.85em; color: #444; }
