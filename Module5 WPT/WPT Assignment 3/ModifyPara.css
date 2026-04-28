@@ -1,0 +1,22 @@
+.container{
+    margin: 200px 500px;
+    margin-bottom: 0px;
+    border: 10px;
+    border-color: black;
+    border-style: solid;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    
+    
+}
+
+.btn{
+    display: block; 
+    margin: auto    ;
+    margin-top: 20px;
+    background-color: violet;
+    border-color: black;
+    align-self: center;
+    padding: 5px;
+    border-radius: 10px;   
+}

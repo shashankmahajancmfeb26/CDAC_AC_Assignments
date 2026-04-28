@@ -1,0 +1,13 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.highlight {
+    color: limegreen;
+}
+
+b {
+    color: black;
+}

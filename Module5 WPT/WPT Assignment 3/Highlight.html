@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Highlight Words</title>
+    <link rel="stylesheet" href="Highlight.css">
+</head>
+
+<body>
+<p 
+onmouseover="highlightWords()" 
+onmouseout="removeHighlight()" 
+style="color:blue; cursor:pointer;">
+    [On mouse over here bold words of the following paragraph will be highlighted]
+</p>
+
+<p id="para">
+    <b>We</b> have just started <b>this</b> section for the users 
+    (<b>beginner</b> to intermediate) who <b>want</b> to work with 
+    <b>various</b> JavaScript <b>problems</b> and write scripts online 
+    to <b>test</b> their JavaScript <b>skill</b>.
+</p>
+
+<script>
+function highlightWords() {
+    let boldWords = document.querySelectorAll("#para b");
+    boldWords.forEach(word => {
+        word.classList.add("highlight");
+    });
+}
+
+function removeHighlight() {
+    let boldWords = document.querySelectorAll("#para b");
+    boldWords.forEach(word => {
+        word.classList.remove("highlight");
+    });
+}
+</script>
+
+</body>
+</html>

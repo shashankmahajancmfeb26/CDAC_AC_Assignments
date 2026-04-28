@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <link rel="stylesheet" href="Remove.css">
+</head>
+
+<body>
+    <select id="planets">
+        <option>Mercury</option>
+        <option>Venus</option>
+        <option>Earth</option>
+        <option>Mars</option>
+        <option>Jupiter</option>
+        <option>Neptune</option>
+        <option>Uranus</option>
+        <option>Pluto</option>
+
+    </select>
+
+    <button  onclick="remove()">Remove</button>
+
+    <script>
+        function remove() {
+            const list = document.getElementById("planets");
+            if (list.selectedIndex !== -1) {
+                list.remove(list.selectedIndex);
+            }
+        }
+    </script>
+
+</body>
+</html>
