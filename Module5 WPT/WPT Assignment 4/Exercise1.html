@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upper Case Data</title>
+</head>
+
+<body>
+    <script>
+        function toUpperCase(string) {
+            return string.toUpperCase();
+        }
+
+        function processData(string, callback) {
+            const a = callback(string);
+            console.log(a);
+        }
+
+        processData("Shashank", toUpperCase);
+
+    </script>
+</body>
+
+</html>

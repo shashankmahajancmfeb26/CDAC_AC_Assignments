@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Fetch Data</title>
+</head>
+
+<body>
+    <script>
+        function fetchData(url, callback) {
+            console.log("Fetching from:", url);
+            setTimeout(function () {
+                let error = false;
+                if (error) {
+                    callback("Error fetching data", null);
+                } else {
+                    callback(null, "Data Fetched");
+                }
+            }, 2000);
+        }
+        function processData(data, callback) {
+            let processed = data.toUpperCase();
+            callback(processed);
+        }
+        fetchData("https://www.wikipedia.org/", function (error, response) {
+            if (error) {
+                console.log(error);
+            } else {
+                processData(response, function (result) {
+                    console.log("Processed Data:", result);
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

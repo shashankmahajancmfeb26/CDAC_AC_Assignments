@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify Data </title>
+</head>
+
+<body>
+    <script>
+        function fetchData(url, callback) {
+            console.log("Fetching from:", url);
+            setTimeout(function () {
+                let error = false;
+                if (error) {
+                    callback("Error: Unable to fetch data", null);
+                } else {
+                    callback(null, "Data fetched successfully!");
+                }
+            }, 2000);
+        }
+        fetchData("https://www.wikipedia.org/", function (error, response) {
+            if (error) {
+                console.log(error);
+            } else {
+                console.log(response);
+            }
+        })
+    </script>
+</body>
+
+</html>
