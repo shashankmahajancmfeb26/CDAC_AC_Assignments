@@ -1,0 +1,41 @@
+body{
+    background: linear-gradient(135deg, #1e1e2f, #121212);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    color: white;
+
+}
+.container{
+    width: 350px;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #1f1f2e;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 5);
+}
+
+.contain{
+    margin-top: 20px;
+}
+
+.btn:hover{
+    background-color: #00a67d;
+    color: white;
+}
+
+#joke{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#error {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}

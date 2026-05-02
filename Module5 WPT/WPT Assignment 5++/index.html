@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #0f172a;
+            color: white;
+        }
+        .location-section {
+            padding-top: 50px;
+        }
+        img {
+            width: 80px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container py-5">
+    <div class="row mb-4">
+        <div class="col-lg-4">
+            <div class="alert alert-primary">
+                Weather Application
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">City</label>
+                <input type="text" class="form-control" id="city" placeholder="Enter city">
+            </div>
+
+            <button class="btn btn-success" onclick="fetchWeather()">
+                Fetch Weather
+            </button>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-lg-4 location-section">
+            <h4 id="city-name"></h4>
+            <h4 id="state-country"></h4>
+            <h4 class="mt-4" id="date-time"></h4>
+        </div>
+
+        <div class="col-lg-4">
+            <img id="weather-condition-image" src="">
+            <h4 id="weather-condition-text"></h4>
+            <h4 id="temp"></h4>
+            <h4 id="wind-speed"></h4>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Your JS file -->
+<script src="app.js"></script>
+
+</body>
+</html>
