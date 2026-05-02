@@ -1,0 +1,41 @@
+body{
+    text-align: center;
+    background: rgb(236, 227, 96);
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{
+    width: 100%;
+    height: 30px;
+    align-self: center;
+    background-color: rgb(209, 88, 88);
+}
+
+/* 1. Style the form container */
+.container {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: auto;
+}
+
+input{
+  width: 200px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+button{
+  background-color: #3ea7e4;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
